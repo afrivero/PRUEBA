@@ -1,0 +1,28 @@
+<div class="misfotos">
+    <!-- Projects Row -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1>
+                Mis imágenes
+            </h1>
+        </div>
+    </div>
+
+    <hr class="small barra">
+
+    <div class="row">
+
+        <%for (var t in photos) {%>
+        <div class="col-md-4 portfolio-item">
+            <a class="photo" href='/photos/<%=t%>'>
+                <img src="<%=photos[t].url%>">
+            </a>
+            <p><%=photos[t].name%></p>
+        </div>
+
+        <%}%>
+
+
+    </div>
+</div>
+<!-- /.container -->
